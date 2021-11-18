@@ -241,6 +241,19 @@ textarea {
   margin: 0; /* 2 */
 }
 
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0%;
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -305,6 +318,8 @@ button:-moz-focusring,
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
+  border: 1px solid #c0c0c0;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 /**
@@ -396,6 +411,14 @@ input [type="search"]::-webkit-search-decoration {
 
 details {
   display: block;
+}
+
+td, th {
+  padding: 0;
+}
+
+ul li, ol li {
+  list-style: none;
 }
 
 /*
