@@ -33,7 +33,11 @@ main h2 {
 }
 
 section {
-    margin: 1.875em 0;;
+    margin: 1.875em 0;
+}
+
+section p {
+    text-align: center;
 }
 
 section:first-child {
