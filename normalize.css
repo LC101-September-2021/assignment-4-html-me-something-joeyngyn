@@ -11,6 +11,7 @@
 html {
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -55,6 +56,24 @@ hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([control]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
 }
 
 /**
