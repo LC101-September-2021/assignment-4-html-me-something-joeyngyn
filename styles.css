@@ -15,3 +15,7 @@ header , main, footer {
 header {
     padding: 1.875em 0;
 }
+
+header h1 {
+    text-align: center;
+}
