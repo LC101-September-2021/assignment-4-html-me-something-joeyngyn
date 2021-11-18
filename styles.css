@@ -36,7 +36,15 @@ section {
     margin: 1.875em 0;
 }
 
+section h2 {
+    text-align: center;
+}
+
 section p {
+    text-align: center;
+}
+
+section ul, li {
     text-align: center;
 }
 
