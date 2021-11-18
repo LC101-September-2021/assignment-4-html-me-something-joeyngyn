@@ -11,3 +11,7 @@ body {
 header , main, footer {
     background-color: #ddd;
 }
+
+header {
+    padding: 1.875em 0;
+}
