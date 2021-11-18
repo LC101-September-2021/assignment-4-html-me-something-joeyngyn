@@ -8,7 +8,7 @@ body {
 }
 
 header , main, footer {
-    background-color: #B2C1A2 ;
+    background-color: #BBBCB6 ;
 }
 
 header {
@@ -105,6 +105,6 @@ img {
         font-size: 4em;
     }
     body {
-        font-size: 50%;
+        font-size: 100%;
     }
 }
