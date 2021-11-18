@@ -11,6 +11,14 @@ body {
     font-size: 100%;
 }
 
+#mainHeading {
+    color: red;
+}
+
+.funParagraph {
+    color: green;
+}
+
 header , main, footer {
     background-color: #746D69 ;
 }
