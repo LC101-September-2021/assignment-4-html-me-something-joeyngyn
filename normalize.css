@@ -103,7 +103,7 @@ a {
  */
 
 abbr[title] {
-  border-bottom: none; /* 1 */
+  border-bottom: 1px dotted; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
@@ -114,13 +114,46 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
+ dfn {
+   font-style: italic;
+ }
+
+ h1 {
+   font-size: 2em;
+   margin: 00.67em 0;
+ }
+
+ mark {
+   background: #ff0;
+   color: #000;
+ }
+
+ small {
+   font-size: 80%;
+ }
+
+ sub, sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+ }
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
 
 code,
 kbd,
@@ -142,20 +175,19 @@ small {
  * all browsers.
  */
 
-sub,
-sup {
+ sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
-sub {
-  bottom: -0.25em;
+sup {
+ top: -0.5em;
 }
 
-sup {
-  top: -0.5em;
+sub {
+ bottom: -0.25em;
 }
 
 /* Embedded content
@@ -169,6 +201,23 @@ img {
   border-style: none;
 }
 
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
 /* Forms
    ========================================================================== */
 
@@ -177,13 +226,17 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+button {
+  overflow: visible;
+}
+
 button,
 input,
 optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
+  font-size: inherit; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
@@ -213,9 +266,9 @@ select { /* 1 */
  */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+html[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -229,6 +282,10 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
+}
+
+button [disabled] , html input [disabled] {
+  cursor: default;
 }
 
 /**
@@ -287,8 +344,8 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 
-[type="checkbox"],
-[type="radio"] {
+input [type="checkbox"],
+input [type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -297,8 +354,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+input [type="number"]::-webkit-inner-spin-button,
+input [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -307,7 +364,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
+input [type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -316,7 +373,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-decoration {
+input [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
