@@ -1,0 +1,122 @@
+/* Write your CSS here! */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 8px;
+    font-size: 100%;
+}
+
+#mainHeading {
+    color: red;
+}
+
+.funParagraph {
+    color: green;
+}
+
+header , main, footer {
+    background-color: #746D69 ;
+}
+
+header {
+    padding: 1.875em 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+main h2 {
+    padding: 0.625em 0 0.625em 0.625em;
+}
+
+section {
+    margin: 1.875em 0;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section h3 {
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+}
+
+section ul, li {
+    text-align: center;
+}
+
+section:first-child {
+    margin-top: 0;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 1em;
+}
+
+p {
+    padding: 1.25em;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 3em;
+}
+
+footer p {
+    display: inline-block;
+}
+
+img {
+    width: 50%;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 680px) {
+    nav ul li {
+        margin: 1em 0;
+        display: block;
+        font-size: 4em;
+    }
+    body {
+        font-size: 100%;
+    }
+}
